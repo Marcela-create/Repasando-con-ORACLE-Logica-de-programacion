@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorno de funciones</title>
+</head>
+<body>
+     <h1>PROGRAMA CALCULAR EL IMC con retorno</h1>
+     <h5> Entonces, hemos ganado mucha eficiencia con nuestro código,
+     hemos creado una función superobjetiva. 
+  
+     Es un error bastante común a la hora de programar 
+     colocar muchas instrucciones dentro de la función,
+      que no es aconsejable, no es una práctica recomendable,
+     sino hacer las acciones por fuera y que las funciones sean
+      objetivas: calcular IMC, imprimir, realizar una acción a 
+      la vez.
+     Porque es mucho mejor crear más funciones, no tengo límite
+     para crear funciones porque las puedo reutilizar. Si yo la
+      hubiera dejado aquí con calcular promedio, imprimir, esa 
+      función iba a funcionar solo para esa situación, para ese
+     escenario.
+     Entonces la buena práctica aprendida es crear funciones 
+     objetivas que realicen en máximo una sola acción, 
+     un solo cálculo y que nos retornen un valor y yo
+      pueda reutilizar esa función en diferentes situaciones.</h5>
+     <script>
+         function saltarLinea(){
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+         }
+         function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+         } 
+         function calcularImc(peso,altura){
+           return (peso/(altura*altura));               
+         }
+         imprimir("El promedio del IMC calculado de Christian y Felipe es : "+ 
+         (calcularImc(71, 1.72) + calcularImc (75,1.73))/2);  
+         imprimir("El promedio del IMC calculado de Gabriel y Luisa es : "+
+          (calcularImc(65,1.68) + calcularImc (55,1.60))/2);
+         imprimir("El promedio del IMC calculado de nombre1 y nombre2 es : "+ 
+         (calcularImc(1,1) + calcularImc (1,1))/2);
+
+
+
+
+         function saltarLinea() {
+        document.write("<br>");
+        }
+
+       function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+       }
+
+       function sumarDosNumeros(numero1, numero2) {
+        imprimir("La suma de los dos números es : " + (numero1 + numero2) );
+       }
+
+        sumarDosNumeros(10, 40);
+
+  
+      function saltarLinea() {
+
+        document.write("<br>");
+     }
+  
+      function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+      }
+
+      function a(numero1, numero2) {
+        return numero1 + numero2;
+     }
+
+      function b(numero1, numero2) {
+        return numero1 / numero2;
+      }
+
+      var resultado = a(10,20) + b(30,2);
+
+      mostrar(resultado);
+
+
+     </script>
+ </body>
+</html>

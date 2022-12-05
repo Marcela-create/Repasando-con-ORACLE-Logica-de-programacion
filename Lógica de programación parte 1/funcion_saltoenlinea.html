@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h4> Aquí nosotros ya estamos usando funciones que vienen por default,
+     que ya fueron creadas en JavaScript,
+    por ejemplo document write, habíamos usado alert, 
+    ¿recuerdan que lanzaba un pop-up, un mensaje de alerta
+     en la pantalla? Entonces estas funciones ya vienen 
+     por defecto en JavaScript.
+     Importante en las funciones, que siempre inician y terminan
+     con un paréntesis, y algunas de ellas reciben un parámetro, el caso de alert, recibe un parámetro texto que va a ser el mensaje que me va a lanzar en la pantalla. En el caso de document write es una función que me devuelve ese texto en la pantalla de nuestro navegador,
+      en este caso, que es el browser que estamos usando.</h4>
+      <h1>Función salto en línea</h1>
+<script>
+      function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+      }
+      var anho= 2005;
+      var saltolinea= "<br><br><br>";
+      document.write ("Juan tiene : " + (anho-2000) + "años");
+      saltarlinea();
+      document.write("Pedro tiene : " + (anho -1995) + "años");
+      anho=2030
+      saltarlinea()
+      document.write("Carlos tiene :" + (anho-2005)+ "años");
+</script>
+</body>
+</html>

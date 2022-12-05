@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactuando con el usuario</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+        }
+        function imprimir(frase){
+           document.write(frase);
+           saltarLinea();
+        } 
+        function calcularImc(peso,altura){
+          return (peso/(altura*altura));               
+        }
+        nombre= prompt("Escriba su nombre : ");
+        peso= prompt( nombre + "Escriba su peso : ");
+        altura=prompt ( nombre + "Escriba su altura : ")
+        ImcCalculado= calcularImc(peso,altura);
+        imprimir (nombre + "Su IMC calculado es : " + ImcCalculado)
+        </script>
+</body>
+</html>

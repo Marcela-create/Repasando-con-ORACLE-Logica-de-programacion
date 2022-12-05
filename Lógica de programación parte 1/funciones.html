@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <h5>creamos dos funciones, una, la primera sin un parámetro de entrada, entonces no está esperando nada, lo único que esa función hace es saltar dos líneas. 
+        Creamos otra función, que esta sí espera un parámetro de entrada que es una frase, y nos imprime esa frase en pantalla.
+        Ahora solo para finalizar, imagínense, miren las ventajas de usar funciones y cuán importantes y eficientes pueden ser 
+        a la hora de trabajar con funciones en nuestros códigos, que imagínense que ya no quiero escribir aquí "saltar línea",
+         que cada vez que yo llamo a la función imprimir, tenga automáticamente dos saltos de línea.</h5>
+<script>
+      function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+      }
+      function imprimir(frase){
+        document.write(frase);
+        saltarlinea();
+     
+      }
+      var anho= 2005;
+      imprimir ("Hola amigos");
+      //imprime y hace salto en linea
+      //document.write ("Juan tiene : " + (anho-2000) + "años");
+      imprimir("Juan tiene : " + (anho-2000) + "años");
+       //imprime y hace salto en linea
+      //saltarlinea();
+     // document.write("Pedro tiene : " + (anho -1995) + "años");
+      imprimir("Pedro tiene : " + (anho-1995) + "años");
+       //imprime y hace salto en linea
+      anho=2030
+      //saltarlinea()
+      //document.write("Carlos tiene :" + (anho-2005)+ "años");
+      imprimir("Carlos tiene : " + (anho-2005) + "años");
+       //imprime y hace salto en linea
+ </script>
+</body>
+</html>

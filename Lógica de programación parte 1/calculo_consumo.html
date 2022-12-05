@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de consumo</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <script>
+        var x= "gasolina";
+        var litrostanque= 40;
+        var Kmrecorridos= 480;
+        var eficienci1=(Kmrecorridos/litrostanque);
+        document.write("El carro con :" + x + 
+        ",  recorre con 1 litro: "+
+        eficienci1 +"Km"+
+        "<br>por lo tanto esa es su eficiencia" );
+        document.write("<br>");
+        x= "alcohol";
+        var Kmrecorridos_al= 300;
+        var eficiencia=(Kmrecorridos_al/litrostanque);
+        document.write("El carro con :" + x + 
+        ",  recorre con 1 litro : "+eficiencia +"Km"+
+        "<br>por lo tanto esa es su eficiencia" );
+        document.write("<br>");
+        var eficienci1= 12;
+        var eficiencia=7.5;
+         if (eficienci1 >= eficiencia){
+            document.write
+            ("Conclusión:La gasolina es más eficiente");
+            document.write("<br>");
+        }
+        else{
+           document.write("Conclusión:El alcohol es más eficiente");
+        }
+           document.write("<br>");
+        document.write("Cómo calculó el instructor ver en IDE");
+        document.write("<br>");
+        var tanque = 40;
+        var caminoConGasolina = 480;
+        var consumoDeGasolina = caminoConGasolina/tanque;
+        var caminoConAlcohol = 300;
+        var consumoDeAlcohol = caminoConAlcohol/tanque;
+        document.write
+        ("La eficiencia del carro usando gasolina es " +
+         consumoDeGasolina + " km/L"); 
+        document.write("<br>"); 
+        document.write
+        ("La eficiencia del carro usando alcohol es " +
+         consumoDeAlcohol + " km/L"); 
+</script>
+</body>
+</html>

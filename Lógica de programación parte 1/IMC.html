@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROGRAMA CALCULAR EL IMC</h1>
+   <h3> Entonces mi código se resumió a una función IMC con tres
+     líneas a llamar a esa función con dos líneas.
+      Lo puedo reutilizar las veces que yo quiera con 
+      las personas que yo quiera.</h3> 
+      <script>
+         function saltarLinea(){
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+         }
+         function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+         } 
+         function calcularImc(peso,altura,nombre){
+            imc= (peso/(altura*altura))         
+           imprimir("El IMC calculado de : " + nombre + " es : " + imc);    
+         }
+          calcularImc(71,1.72,"Christian");
+          calcularImc(75,1.73,"Felipe");
+          calcularImc(89,1.58,"María"); 
+          
+      </script>
+</body>
+</html>
